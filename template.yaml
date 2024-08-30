@@ -39,6 +39,7 @@ Resources:
     Properties:
       FunctionName: !Sub "sam-base-baseFunction-${stage}"
       CodeUri: src/controllers
+      Tracing: Active
       Environment:
         Variables:
           stage: !Ref stage
@@ -73,6 +74,7 @@ Resources:
     Properties:
       FunctionName: !Sub "sam-base-createItem-${stage}"
       CodeUri: src/controllers
+      Tracing: Active
       Environment:
         Variables:
           stage: !Ref stage
