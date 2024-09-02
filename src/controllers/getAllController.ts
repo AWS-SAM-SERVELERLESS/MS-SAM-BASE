@@ -21,7 +21,7 @@ export const lambdaHandler = async (event: APIGatewayProxyEvent): Promise<APIGat
         return addCorsHeaders({
             statusCode: 200,
             body: JSON.stringify({
-                message: 'Items retrieved successfully',
+                message: 'Items retrieved successfully.',
                 data: products,
             }),
         });
